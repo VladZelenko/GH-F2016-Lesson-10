@@ -1,0 +1,81 @@
+.portfolio {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #f4f4f4;
+	border: 1px solid #e8e8e8;
+}
+
+.list-portfolio {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+	.col {
+		// margin-bottom: 40px;
+		max-width: 370px;
+		height: auto;
+		position: relative;
+		overflow: hidden;
+
+		img {
+			display: block;
+			width: 370px;
+			height: auto;
+		}
+
+		&:hover .overlay {
+			opacity: 1;
+			top: 0;
+			transform: scale(1);
+		}
+	}
+	.foot-box { //можливо треба було б просто для h3  span задати флоати і не робити флексбоксами?
+		display: flex;
+		flex-flow: wrap row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: 65px;
+		background-color: $secondary_font_color;
+		border: 1px solid #e8e8e8;
+	}
+
+	h3 {
+		padding-left: 15px;
+		color: $head_color;
+		font: 700 14px $OpenSans;
+		text-transform: uppercase;
+	}
+
+	span {
+		padding-right: 20px;
+		color: #aba7ab;
+		font: italic 400 12px $OpenSans;
+	}
+}
+
+
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 370px;
+	height: 300px;
+	background: rgba(0, 0, 0, 0.1);
+	transition: all .5s;
+	transform: scale(0);
+	opacity: 0;
+}
+
+.overlay a {
+	display: block;
+	margin: 0 auto;
+	width: 170px;
+	height: 50px;
+	color: $secondary_font_color;
+	font: 600 16px/50px $OpenSans;
+	background: none;
+	border: 1px solid $secondary_font_color;
+	border-radius: 1px;
+	text-align: center;
+}

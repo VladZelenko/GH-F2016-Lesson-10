@@ -1,0 +1,43 @@
+.about {
+	width: 100%;
+	min-height: 100vh;
+}
+
+//зробив ці дивні класи так як заголовок і параграф такого типу повторяється досить часто на сторінці, мб підкажеш як краще було їх назвати?
+.h_head {
+	color: $head_color;
+	font: 700 20px $OpenSans;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.p_head {
+	padding: 25px 0 45px 0;
+	color: $primary_font_color;
+	font: 400 14px $OpenSans;
+	text-align: center;
+}
+
+.flex-conteiner {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+	.col {
+		h3 {
+			color: $head_color;
+			font: 700 14px $OpenSans;
+			text-transform: uppercase;
+		}
+
+		p {
+			padding: 30px 0 0 0;
+			color: $primary_font_color;
+			font: 400 14px/20px $OpenSans;
+		}
+
+		img {
+			padding: 45px 0 30px 0;
+		}
+	}
+}

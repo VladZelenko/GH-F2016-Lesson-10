@@ -1,7 +1,7 @@
 .intro {
-	background: url('../../img/header.png') no-repeat;
-	background-size: 100%;
-	min-height: 100vh;
+	background: url('../../img/header.jpg') no-repeat;
+	width: 100%;
+	min-height: 530px;
 }
 
 .logo {
@@ -18,9 +18,10 @@
 
 .hero {
 	text-align: center;
-	width: 40%;
+	width: 90%;
 	margin: 0 auto;
 	h2 {
+		padding: 150px 0 40px 0;
 		color: $secondary_font_color;
 		font: 700 33px/45px $OpenSans;
 		text-transform: uppercase;

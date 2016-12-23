@@ -1,0 +1,21 @@
+{
+  "name": "lesson10",
+  "description": "home work 9 - npm, gulp, bower, bootstrap",
+  "main": "index.js",
+  "authors": [
+    "VladZelenko"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/VladZelenko/GH-F2016-Lesson-10",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
