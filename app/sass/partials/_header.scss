@@ -1,0 +1,28 @@
+.intro {
+	background: url('../../img/header.png') no-repeat;
+	background-size: 100%;
+	min-height: 100vh;
+}
+
+.logo {
+	 a {
+	 	color: $logo_color;
+	 	font: 700 30px $OpenSans;
+	 	span {
+	 		color: $secondary_font_color;
+	 		font: 400 48px $Roboto;
+	 	}
+	 }
+}
+
+
+.hero {
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+	h2 {
+		color: $secondary_font_color;
+		font: 700 33px/45px $OpenSans;
+		text-transform: uppercase;
+	}
+}

@@ -1,0 +1,21 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 75%;
+	margin: 0 auto;
+}
+
+li {
+	list-style: none;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+section.about, .team, .services, .pricing {
+	padding: 110px 0;
+}

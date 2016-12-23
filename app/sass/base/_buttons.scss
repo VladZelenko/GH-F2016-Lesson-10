@@ -1,0 +1,11 @@
+.primary-btn {
+	display: block;
+	width: 200px;
+	height: 55px;
+	margin: 0 auto;
+	color: $secondary_font_color;
+	font: 700 20px/55px $OpenSans;
+	background: $primary_btn_color;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
