@@ -1,0 +1,42 @@
+.services {
+	width: 100%;
+	min-height: 100vh;
+}
+
+.list-services {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+	.col {
+		width: 275px;
+		height: 300px;
+		border: 1px solid #e2e2e2;
+		padding: 25px 20px 20px 25px;
+		margin-bottom: 30px;
+
+		h3 {
+			color: $head_color;
+			font: 700 20px $OpenSans;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		p {
+			padding: 35px 0 30px 0;
+			color: $head_color;
+			font: 400 14px/20px $OpenSans;
+			text-align: center;
+		}
+		a {
+			display: block;
+			width: 130px;
+			height: 35px;
+			margin: 0 auto;
+			color: $secondary_font_color;
+			font: 400 14px/35px $OpenSans;
+			background-color: #4b4a4b;
+			border-radius: 1px;
+			text-align: center;
+		}
+	}
+}

@@ -10,25 +10,28 @@
 	flex-flow: row wrap;
 	justify-content: space-around;
 
-	.col {
-		// margin-bottom: 40px;
-		max-width: 370px;
+.col {
+	margin-bottom: 40px;
+	max-width: 370px;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+
+	img {
+		display: block;
+		width: 370px;
 		height: auto;
-		position: relative;
-		overflow: hidden;
-
-		img {
-			display: block;
-			width: 370px;
-			height: auto;
-		}
-
-		&:hover .overlay {
-			opacity: 1;
-			top: 0;
-			transform: scale(1);
-		}
 	}
+
+	&:hover .overlay {
+		opacity: 1;
+		top: 0;
+		transform: scale(1);
+	}
+}
+
+
+
 	.foot-box { //можливо треба було б просто для h3  span задати флоати і не робити флексбоксами?
 		display: flex;
 		flex-flow: wrap row;
@@ -69,7 +72,7 @@
 
 .overlay a {
 	display: block;
-	margin: 0 auto;
+	// margin: 0 auto;
 	width: 170px;
 	height: 50px;
 	color: $secondary_font_color;
@@ -78,4 +81,8 @@
 	border: 1px solid $secondary_font_color;
 	border-radius: 1px;
 	text-align: center;
+
+	&:hover {
+		background: #000000;
+	}
 }
