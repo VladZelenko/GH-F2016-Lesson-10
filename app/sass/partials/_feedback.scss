@@ -11,6 +11,8 @@
 	justify-content: space-between;
 
 	.col {
+		width: 575px;
+		min-height: 330px;
 		h3 {
 			color: $head_color;
 			font: 700 14px $OpenSans;

@@ -48,12 +48,12 @@
 			color: $secondary_font_color;
 			transition: all .5s ease-in-out;
 		}
-
-		&:hover a {
-			color: #000000;
-			background: $secondary_font_color;
-			transition: all .5s ease-in-out;
-		}
+//загальний ховер
+		// &:hover a {
+		// 	color: #000000;
+		// 	background: $secondary_font_color;
+		// 	transition: all .5s ease-in-out;
+		// }
 
 		&:hover .fa {
 			color: $secondary_font_color;
@@ -81,12 +81,13 @@
 			background-color: #4b4a4b;
 			border-radius: 1px;
 			text-align: center;
-
-		// 	&:hover {
-		// 	color: #000000;
-		// 	background: $secondary_font_color;
-		// 	transition: all .5s ease-in-out;
-		// }
+//ховер на кнопку
+			&:hover {
+			color: #000000;
+			background: $secondary_font_color;
+			transition: all .5s ease-in-out;
+			text-decoration: none;
+		}
 	}
 }
 }

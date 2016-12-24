@@ -1,5 +1,5 @@
 .intro {
-	background: url('../../img/header.jpg') no-repeat;
+	background: url('../../img/header.png') no-repeat;
 	width: 100%;
 	min-height: 530px;
 }
@@ -27,6 +27,10 @@
 		color: $secondary_font_color;
 		font: 700 33px/45px $OpenSans;
 		text-transform: uppercase;
+	}
+
+	a.primary-btn {
+		text-decoration: none;
 	}
 }
 

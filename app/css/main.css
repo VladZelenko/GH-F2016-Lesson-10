@@ -90,7 +90,7 @@ img {
   color: #c9c9c9;
   font: 400 14px "OpenSans", sans-serif; }
   .feedback-form input {
-    margin: 0 30px 30px 0;
+    margin: 0 0 30px 0;
     padding-left: 15px;
     width: 270px;
     height: 50px;
@@ -115,20 +115,17 @@ img {
 @media screen and (min-width: 768px) {
   .feedback-form {
     width: 100%; }
-    .feedback-form li:nth-child(1) {
-      width: 100%; }
-      .feedback-form li:nth-child(1) input[type="text"] {
-        margin: 0 30px 30px 0; }
+    .feedback-form li:nth-child(1) input[type="text"] {
+      margin: 0 30px 30px 0; }
     .feedback-form li:nth-child(2) input {
       width: 575px; }
     .feedback-form textarea {
       width: 575px; }
     .feedback-form input[type="submit"] {
-      float: right;
-      margin-right: 30px; } }
+      float: right; } }
 
 .intro {
-  background: url("../../img/header.jpg") no-repeat;
+  background: url("../../img/header.png") no-repeat;
   width: 100%;
   min-height: 530px; }
 
@@ -150,6 +147,8 @@ img {
     color: #ffffff;
     font: 700 33px/45px "OpenSans", sans-serif;
     text-transform: uppercase; }
+  .hero a.primary-btn {
+    text-decoration: none; }
 
 .menu-box {
   padding-top: 35px; }
@@ -174,10 +173,11 @@ button.navbar-toggle .icon-bar {
 
 .about {
   width: 100%;
-  min-height: 560px; }
+  min-height: auto; }
   .about .primary-btn {
     float: left;
-    margin-top: 35px; }
+    margin-top: 35px;
+    text-decoration: none; }
 
 .h_head {
   color: #504f50;
@@ -327,10 +327,6 @@ button.navbar-toggle .icon-bar {
     .list-services .col:hover p {
       color: #ffffff;
       transition: all .5s ease-in-out; }
-    .list-services .col:hover a {
-      color: #000000;
-      background: #ffffff;
-      transition: all .5s ease-in-out; }
     .list-services .col:hover .fa {
       color: #ffffff; }
     .list-services .col h3 {
@@ -353,6 +349,11 @@ button.navbar-toggle .icon-bar {
       background-color: #4b4a4b;
       border-radius: 1px;
       text-align: center; }
+      .list-services .col a:hover {
+        color: #000000;
+        background: #ffffff;
+        transition: all .5s ease-in-out;
+        text-decoration: none; }
 
 .feedback {
   width: 100%;
@@ -364,21 +365,24 @@ button.navbar-toggle .icon-bar {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between; }
-  .flex-container .col h3 {
-    color: #504f50;
-    font: 700 14px "OpenSans", sans-serif;
-    text-transform: uppercase; }
-  .flex-container .col p {
-    padding: 30px 0 25px 0;
-    color: #a8a8a8;
-    font: 400 14px/20px "OpenSans", sans-serif; }
-  .flex-container .col dt {
-    padding-bottom: 30px;
-    color: #504f50;
-    font: 700 14px "OpenSans", sans-serif; }
-  .flex-container .col dd {
-    color: #a8a8a8;
-    font: 400 14px "OpenSans", sans-serif; }
+  .flex-container .col {
+    width: 575px;
+    min-height: 330px; }
+    .flex-container .col h3 {
+      color: #504f50;
+      font: 700 14px "OpenSans", sans-serif;
+      text-transform: uppercase; }
+    .flex-container .col p {
+      padding: 30px 0 25px 0;
+      color: #a8a8a8;
+      font: 400 14px/20px "OpenSans", sans-serif; }
+    .flex-container .col dt {
+      padding-bottom: 30px;
+      color: #504f50;
+      font: 700 14px "OpenSans", sans-serif; }
+    .flex-container .col dd {
+      color: #a8a8a8;
+      font: 400 14px "OpenSans", sans-serif; }
 
 .footer {
   width: 100%;
