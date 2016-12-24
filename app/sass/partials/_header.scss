@@ -1,6 +1,7 @@
 .intro {
 	//коли запускаю gulp build ця картинка десь зникає, що робити?
 	background: url('../../img/header-bg.png') no-repeat;
+	background-size: cover;
 	width: 100%;
 	min-height: 530px;
 }
