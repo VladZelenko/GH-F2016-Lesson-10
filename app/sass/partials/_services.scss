@@ -1,6 +1,20 @@
 .services {
 	width: 100%;
 	min-height: 100vh;
+
+	.fa {
+		text-align: center;
+	}
+
+	.fa::after {
+		content: ' ';
+		display: block;
+		width: 75px;
+		margin: 15px 0 35px 0;
+		height: 1px;
+		background: #5c5959;
+		text-align: center;
+	}
 }
 
 .list-services {
@@ -10,10 +24,31 @@
 
 	.col {
 		width: 275px;
-		height: 300px;
+		height: auto;
 		border: 1px solid #e2e2e2;
 		padding: 25px 20px 20px 25px;
 		margin-bottom: 30px;
+
+		&:hover {
+			background: $primary_btn_color;
+			transition: all .5s ease-in-out;
+		}
+
+		&:hover h3 {
+			color: $secondary_font_color;
+			transition: all .5s ease-in-out;
+		}
+
+		&:hover p {
+			color: $secondary_font_color;
+			transition: all .5s ease-in-out;
+		}
+
+		// &:hover a {
+		// 	color: #000000;
+		// 	background: $secondary_font_color;
+		// 	transition: all .5s ease-in-out;
+		// }
 
 		h3 {
 			color: $head_color;
@@ -37,6 +72,12 @@
 			background-color: #4b4a4b;
 			border-radius: 1px;
 			text-align: center;
+//якщо не не так повинен був бути ховер на кнопку, то рішення вище закоментоване
+			&:hover {
+			color: #000000;
+			background: $secondary_font_color;
+			transition: all .5s ease-in-out;
+		}
 		}
 	}
 }
