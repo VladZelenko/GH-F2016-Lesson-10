@@ -125,7 +125,7 @@ img {
       float: right; } }
 
 .intro {
-  background: url("../../img/header.png") no-repeat;
+  background: url("../../img/header-bg.png") no-repeat;
   width: 100%;
   min-height: 530px; }
 
