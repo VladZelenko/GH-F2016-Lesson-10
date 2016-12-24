@@ -1,19 +1,70 @@
 .contact-form {
 	margin-top: 30px;
+	.primary-btn {
+		width: 200px;
+		margin: 30px auto;
+	}
+}
+//чи треба було на форму теж причепити флексбокси?
+.feedback-form {
+	width: 270px;
+	color: #c9c9c9;
+	font: 400 14px $OpenSans;
+
+	input {
+		margin: 0 30px 30px 0;
+		padding-left: 15px;
+		width: 270px;
+		height: 50px;
+		border: 1px solid #e6e6e6;
 	}
 
-.feedback-form {
-	li:nth-child(1) {
-		width: 100%;
-		input {
-			width: 270px;
-			height: 50px;
-		}
-}
 	li:nth-child(2) {
 		input {
-			width: 100%;
+			margin-bottom: 30px;
+			padding-left: 15px;
+			width: 270px;
 			height: 50px;
+			border: 1px solid #e6e6e6;
+		}
+	}
+	textarea {
+		padding: 25px 15px;
+		width: 270px;
+		height: 150px;
+		resize: none;
+		border: 1px solid #e6e6e6;
+	}
+
+	input[type="submit"] {
+		outline: none;
+		border: none;
+		cursor: pointer;
+
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.feedback-form {
+		width: 100%;
+		li:nth-child(1) {
+			width: 100%;
+			input[type="text"]{
+				margin: 0 30px 30px 0;
+
+			}
+		}
+		li:nth-child(2) {
+			input {
+				width: 575px;
+			}
+		}
+		textarea {
+			width: 575px;
+		}
+		input[type="submit"] {
+			float: right;
+			margin-right: 30px;
 		}
 	}
 }

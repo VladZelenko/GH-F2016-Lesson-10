@@ -4,7 +4,9 @@
 	background: $primary_btn_color;
 
 	span {
+		display: block;
 		color: $secondary_font_color;
 		font: 400 14px/50px $OpenSans;
+		text-align: center;
 	}
 }
