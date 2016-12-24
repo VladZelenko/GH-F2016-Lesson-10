@@ -10,25 +10,25 @@
 	flex-flow: row wrap;
 	justify-content: space-around;
 
-.col {
-	margin-bottom: 40px;
-	max-width: 370px;
-	height: auto;
-	position: relative;
-	overflow: hidden;
-
-	img {
-		display: block;
-		width: 370px;
+	.col {
+		margin-bottom: 40px;
+		max-width: 370px;
 		height: auto;
-	}
+		position: relative;
+		overflow: hidden;
 
-	&:hover .overlay {
-		opacity: 1;
-		top: 0;
-		transform: scale(1);
+		img {
+			display: block;
+			width: 370px;
+			height: auto;
+		}
+
+		&:hover .overlay {
+			opacity: 1;
+			top: 0;
+			transform: scale(1);
+		}
 	}
-}
 
 
 
@@ -44,14 +44,15 @@
 	}
 
 	h3 {
-		padding-left: 15px;
+		padding: 30px 0 0 15px;
 		color: $head_color;
 		font: 700 14px $OpenSans;
 		text-transform: uppercase;
 	}
 
 	span {
-		padding-right: 20px;
+		display: block;
+		padding: 35px 20px 0 0;
 		color: #aba7ab;
 		font: italic 400 12px $OpenSans;
 	}
@@ -72,7 +73,7 @@
 
 .overlay a {
 	display: block;
-	// margin: 0 auto;
+	margin: 35% auto;
 	width: 170px;
 	height: 50px;
 	color: $secondary_font_color;
@@ -83,6 +84,10 @@
 	text-align: center;
 
 	&:hover {
-		background: #000000;
+		color: #000000;
+		background: $secondary_font_color;
+		border: none;
+		transition: all .5s ease-in-out;
+		text-decoration: none;
 	}
 }
