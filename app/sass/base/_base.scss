@@ -4,7 +4,7 @@
 
 
 .wrapper {
-	width: 75%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -24,5 +24,12 @@ section.indent {
 img {
 	width: 100%;
 	height: auto;
+}
+
+@media screen and (min-width: 1400px) {
+	.wrapper {
+		width: 75%;
+
+	}
 }
 

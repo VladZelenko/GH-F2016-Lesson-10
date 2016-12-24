@@ -21,9 +21,43 @@
 	width: 90%;
 	margin: 0 auto;
 	h2 {
-		padding: 150px 0 40px 0;
+		max-width: 500px;
+		margin: 0 auto;
+		padding: 60px 0 40px 0;
 		color: $secondary_font_color;
 		font: 700 33px/45px $OpenSans;
 		text-transform: uppercase;
+	}
+}
+
+.menu-box {
+	padding-top: 35px;
+	a {
+		color: $secondary_font_color;
+		font: 700 15px $OpenSans;
+		text-transform: uppercase;
+	}
+}
+button.navbar-toggle {
+	padding-top: 40px;
+}
+
+button.navbar-toggle .icon-bar {
+	background: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+	.hero {
+		h2 {
+			padding-top: 170px;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.hero {
+		h2 {
+			padding-top: 190px;
+		}
 	}
 }

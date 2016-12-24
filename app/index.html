@@ -5,19 +5,35 @@
 	<title>UIBrush</title>
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<section class="intro">
 		<div class="wrapper">
 			<header class="header">
-				<h1 class="logo">
-					<a href="#">UIBrush<span>.</span></a>
-				</h1>
+				<nav class="navbar top-nav">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1 class="logo">
+							<a href="#" >UIBrush<span>.</span></a>
+						</h1>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav navbar-right menu-box">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</div>
 
-				<div class="nav-menu">
-					<!-- пошукати альтернативу менюшці бутстрапа, мб взяти з в3ц, або якийсь плагіе, скрипт чи щось подібне -->
-				</div>
+				</nav>
 			</header>
 
 			<div class="hero">
@@ -33,12 +49,12 @@
 			<p class="p_head">
 				Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
 			</p>
-			<ul class="flex-conteiner">
-				<li class="col">
+			<div class="flex-conteiner">
+				<div class="col">
 					<img src="img/car.png" alt="Retro car">
-				</li>
+				</div>
 
-				<li class="col">
+				<div class="col">
 					<h3>Lorem ipsum dolor sit amet adipisicing elit.</h3>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
@@ -47,8 +63,8 @@
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 					</p>
 					<a href="#" class="primary-btn ">get started</a>
-				</li>
-			</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -259,5 +275,7 @@
 			<span>Copyright © 2014 UIBrush.</span>
 		</div>
 	</footer>
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 </body>
 </html>

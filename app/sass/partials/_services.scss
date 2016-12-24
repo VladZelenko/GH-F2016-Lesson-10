@@ -1,9 +1,14 @@
 .services {
 	width: 100%;
-	min-height: 100vh;
+	min-height: 530px;
 
 	.fa {
+		color: #39c9da;
+		font-size: 35px;
 		text-align: center;
+		display: block;
+		width: 75px;
+		margin: 0 auto;
 	}
 
 	.fa::after {
@@ -44,11 +49,15 @@
 			transition: all .5s ease-in-out;
 		}
 
-		// &:hover a {
-		// 	color: #000000;
-		// 	background: $secondary_font_color;
-		// 	transition: all .5s ease-in-out;
-		// }
+		&:hover a {
+			color: #000000;
+			background: $secondary_font_color;
+			transition: all .5s ease-in-out;
+		}
+
+		&:hover .fa {
+			color: $secondary_font_color;
+		}
 
 		h3 {
 			color: $head_color;
@@ -72,12 +81,12 @@
 			background-color: #4b4a4b;
 			border-radius: 1px;
 			text-align: center;
-//якщо не не так повинен був бути ховер на кнопку, то рішення вище закоментоване
-			&:hover {
-			color: #000000;
-			background: $secondary_font_color;
-			transition: all .5s ease-in-out;
-		}
-		}
+
+		// 	&:hover {
+		// 	color: #000000;
+		// 	background: $secondary_font_color;
+		// 	transition: all .5s ease-in-out;
+		// }
 	}
+}
 }
